@@ -94,7 +94,7 @@ while p<=0.33:
         df1 = pd.DataFrame([[p,traj1,traj2,traj3,traj4,vis1,vis2,vis3,vis4,FDG1,FDG2,FDG3,FDG4,plan_t1,plan_t2,plan_t3,plan_t4,bumps1,bumps2,bumps3,bumps4,rt1,rt2,rt3,rt4,con_vis3,con_vis4,FG]],columns=['p','Trajectory Length 1','Trajectory Length 2','Trajectory Length 3','Trajectory Length 4','Nodes Visited 1','Nodes Visited 2','Nodes Visited 3','Nodes Visited 4','FDG Length 1','FDG Length 2','FDG Length 3','FDG Length 4','Planning Time 1','Planning Time 2','Planning Time 3','Planning Time 4','Bumps 1','Bumps 2','Bumps 3','Bumps 4','Run Time 1','Run Time 2','Run Time 3','Run Time 4','con_vis 3','con_vis 4','FG Length'])
         df = pd.concat([df,df1])
 
-        if x == 1:
+        if x == 30:
             x = 0
             print(p)
             p = p + 0.01
